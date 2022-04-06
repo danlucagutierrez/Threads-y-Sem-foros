@@ -11,15 +11,15 @@ https://github.com/danlucagutierrez/Threads-y-Sem-foros
 ![](https://i.pinimg.com/originals/1c/61/d4/1c61d40751eb1efdac991bb129b8c970.jpg)
 
 
-###Introducción
+### Introducción
 En este trabajo práctico se implemento en lenguaje C, mediante semáforos y threads la lógica para simular una competencia entre equipos a realizar el mejor sanguche de milanesa.
 
 =============
 
-####Comando para ejecutar
+#### Comando para ejecutar
 `$ ./subwayArgento_exe`
 
-####Código fuente
+#### Código fuente
 ```python
 #include <stdio.h>	//Libreria estandar
 #include <stdlib.h> 	//Para usar exit y funciones de la libreria standard
@@ -400,7 +400,7 @@ int main(){
 ```
 ----
 
-###Funciones importantes para los hilos y semáforos
+### Funciones importantes para los hilos y semáforos
 
 | Function name | Description                    |
 | ------------- | ------------------------------ |
@@ -408,7 +408,7 @@ int main(){
 | `ejecutarReceta()`   | Se crean los hilos que corren dentro de cada equipo, y los semaforos internos. |
 | `imprimirAccion()`      | Recorre la receta y muestra la acción y los ingredientes, además escribe en un archivo llamado resultados.txt |
 
-##Dificultades y decisiones
+## Dificultades y decisiones
 Para leer y entender el template de base tuve que investigar sobre C, cuestiones de punteros, direcciones de memoria, strucs y las expresiones (*, &, ->).
 
 Para implementar semáforos y threads busque en la documentación y la información que se nos fue dando en las clases, ya que no fue facil entender el funcionamiento de los mismos.
@@ -424,6 +424,6 @@ Por otro lado tome decisiones durante la implementación que deberian ser aclara
 - Todos los equipos lanzan el mensaje de "Equipo % termino.", solo el equipo que termino primero lanza el mensaje "Equipo % gano.".
 - Se resuelve esto último sobre el mensaje gano, utilizando un semaforo externo para todos los hilos y una bandera (una variable binaria que toma dos valores 0 o 1, ya que en C no existen las variables booleanas).
 
-##Conclusiónes
+## Conclusiónes
 El resultado de hacer el tp fue principalmente aclarar dudas y cuestiones que se presentan cuando uno lee la teoria y resuelve ejercicios con pseudocodigo. Fue importante observar lo que sucedía con *htop* ya que en varias oportunidades la ejecución no terminaba y se podía observar como quedaban hilos en proceso que ~~no se mataban~~. 
-¡Muy interesante este MiniTP! :fa-check:
+¡Muy interesante este MiniTP!
